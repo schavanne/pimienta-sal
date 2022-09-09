@@ -26,6 +26,13 @@ module.exports = [
         description : "Espárragos blancos con vinagreta de verduras y jamón ibérico",
         price : 37.50,
         image : "esparragos.png"
+    },
+    {
+        id : 5,
+        title : "Fideos al pesto",
+        description : null,
+        price : 27.50,
+        image : ""
     }
 
 ]

@@ -20,7 +20,14 @@
         <div class="ps-col l6 ps-padding-large">
           <h1 class="ps-center"><%= product.title %> </h1>
           <br />
-          <h4><%= product.description %>. Este es un plato especial que solo lo va a encontrar aquí, por ello nuestro principal objetivo es brindarle a nuestros comensales la mejor experiencia gastronómica.</h4>
+          <h4>
+            <%if (product.description == null) {%>
+              Plato tipico.
+            <%} else {%>
+              <%= product.description %>. 
+            <%}%>
+            
+            Este es un plato especial que solo lo va a encontrar aquí, por ello nuestro principal objetivo es brindarle a nuestros comensales la mejor experiencia gastronómica.</h4>
           <p class="ps-text-grey">
             U$S <%= product.price %> 
           </p>

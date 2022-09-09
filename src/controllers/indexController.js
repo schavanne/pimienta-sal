@@ -1,10 +1,11 @@
 const products = require('../data/products');
-
+const about = require('../data/about');
 
 module.exports = {
     index : (req,res) => {
         return res.render('index',{
-            products
+            products,
+            about
         })
     },
     detail : (req,res) => {
